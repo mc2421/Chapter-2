@@ -13,9 +13,11 @@ public class MadLibs {
 		String aNoun;
 		String PluralNoun;
 		
-		int a, b, c;
+		int integera;
+		int integerb;
+		int integerc;
 		
-		c = a - b;
+
 		
 		Scanner input = new Scanner(System.in);
 		
@@ -23,7 +25,7 @@ public class MadLibs {
 		color = input.nextLine();
 		System.out.print("Enter a wordEst >>");
 		wordEst = input.nextLine();
-		System.out.print("Enter a bodyParPlural >>");
+		System.out.print("Enter a bodyPartPlural >>");
 		bodyPartPlural = input.nextLine();
 		System.out.print("Enter an Animal >>");
 		anAnimal = input.nextLine();
@@ -32,11 +34,13 @@ public class MadLibs {
 		System.out.print("Enter a PluralNoun >>");
 		PluralNoun = input.nextLine();
 		System.out.print("Enter a number >> ");
-		a = input.nextInt();
+		integera = input.nextInt();
 		System.out.print("Enter a number >>");
-		b = input.nextInt();
-		System.out.print("a - b = c");
-		c = a - b;
+		integerb = input.nextInt();
+		System.out.print("A - B = C)");
+		integerc = integera-integerb;
+		
+		
 		
 		
 		System.out.println("The color is " + color);
@@ -44,11 +48,12 @@ public class MadLibs {
 		System.out.println("The bodyPartPlural is " + bodyPartPlural);
 		System.out.println("The Animal is " + anAnimal);
 		System.out.println("The Noun is " + aNoun);
-		System.out.print
+		System.out.println("");
 		
 		
 		
-		System.out.print("The " + color + " Dragon is the " + wordEst + "Dragon of all." 
+		System.out.print("The " + color + " Dragon is the " + wordEst + " Dragon of all. It has " + integerc + bodyPartPlural + ", and a " + anAnimal + "shaped like a " + aNoun + 
+				". It loves to eat" + PluralNoun + ", although it will feast on nearly anything"); 
 		
 		
 		
